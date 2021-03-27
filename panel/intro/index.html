@@ -14,14 +14,6 @@
 
 
 <style type="text/css">
-  #intro {
-    background: url("https://coda-simulation.github.io/assets/css/images/overlay.png"), url("https://coda-simulation.github.io/images/coda_grey.png");
-    background-size: 256px 256px, cover;
-    background-attachment: fixed, fixed;
-    background-position: top left, 50% 40%;
-    background-repeat: repeat, no-repeat;
-  }
-
   #about {
     background: url("https://coda-simulation.github.io/assets/css/images/overlay.png"), url("https://coda-simulation.github.io/images/coda_grey.png");
     background-size: 256px 256px, cover;
@@ -103,9 +95,11 @@
 
 
 <!-- Margin half size --> 
-<video autoplay muted loop style="z-index: -100; position: fixed; top: 50%; left: 50%; margin-left: -960px; margin-top:-540px">
+<div style="overflow:hidden;">
+<video autoplay muted loop style="z-index: -100; position: fixed; top: 50%; left: 50%; margin-left: -960px; overflow:hidden; margin-top:-540px; object-fit:fill;">
   <source src="images/8.mp4" type="video/mp4">
 </video>
+</div>
 
 
 
